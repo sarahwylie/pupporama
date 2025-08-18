@@ -79,7 +79,7 @@ export function Welcome() {
             </div>
           </div>
           <div className="text-center w-full">
-          <hr />
+            <hr />
           </div>
           <span className="text-gray-500 dark:text-gray-400 text-center font-bold">
             Now meet the puppies:
@@ -102,7 +102,7 @@ export function Welcome() {
           <br />
           <br />
           <div className="columns-3xs gap-4">
-            {puppies.map(( puppy ) => (
+            {puppies.map((puppy) => (
               <div key={puppy.name} className="flow-root">
                 <span className="justify-center items-center">
                   <img
@@ -111,13 +111,13 @@ export function Welcome() {
                     className="rounded-xl"
                   />
                 </span>
-              <h2 className="text-2xl text-gray-900 dark:text-gray-100 font-bold text-center">
-                {puppy.name}
-              </h2>
-              <br/>
-              <br/>
+                <h2 className="text-2xl text-gray-900 dark:text-gray-100 font-bold text-center">
+                  {puppy.name}
+                </h2>
+                <br />
+                <br />
               </div>
-              ))} 
+            ))}
           </div>
         </div>
       </div>
@@ -143,41 +143,41 @@ const millisecondsInDay: number = 1000 * 60 * 60 * 24;
 const differenceInDays: number =
   Math.floor(differenceInMs / millisecondsInDay);
 
-  const puppies = [
-    {
-        "name": "Hippo",
-        "pic": Hippo
-    },
-    {
-        "name": "Kathleen",
-        "pic": Kathleen
-    },
-    {
-        "name": "Otter",
-        "pic": Otter
-    },
-    {
-        "name": "Piggy",
-        "pic": Piggy
-    },
-    {
-        "name": "Pinky",
-        "pic": Pinky
-    },
-    {
-        "name": "Possum",
-        "pic": Possum
-    },
-    {
-        "name": "Reptar",
-        "pic": Reptar
-    },
-    {
-        "name": "Splinter",
-        "pic": Splinter
-    },
-    {
-        "name": "Violet",
-        "pic": Violet
-    }
+const puppies = [
+  {
+    "name": "Hippo",
+    "pic": Hippo
+  },
+  {
+    "name": "Kathleen",
+    "pic": Kathleen
+  },
+  {
+    "name": "Otter",
+    "pic": Otter
+  },
+  {
+    "name": "Piggy",
+    "pic": Piggy
+  },
+  {
+    "name": "Pinky",
+    "pic": Pinky
+  },
+  {
+    "name": "Possum",
+    "pic": Possum
+  },
+  {
+    "name": "Reptar",
+    "pic": Reptar
+  },
+  {
+    "name": "Splinter",
+    "pic": Splinter
+  },
+  {
+    "name": "Violet",
+    "pic": Violet
+  }
 ]
