@@ -84,21 +84,6 @@ export function Welcome() {
           <span className="text-gray-500 dark:text-gray-400 text-center font-bold">
             Now meet the puppies:
           </span>
-          {/* <div className="grid grid-cols-2 gap-4">
-            <div>
-              <h2 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">
-                
-              </h2>
-              <span>
-
-              </span>
-              <br />
-              <br />
-              <h2 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">
-                
-              </h2>
-            </div>
-          </div> */}
           <br />
           <br />
           <div className="columns-3xs gap-4">
@@ -119,6 +104,16 @@ export function Welcome() {
               </div>
             ))}
           </div>
+          <div className="text-center w-full">
+            <hr />
+          </div>
+          <h2 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">
+            Next Steps:
+          </h2>
+          <ul className="text-center">
+            <li>Please check out our <a href="https://www.amazon.com/hz/wishlist/ls/2ZHVZ6WIR1XP4?ref_=wl_share"><strong>Amazon Wishlist</strong></a></li>
+            <li>Fill out an <strong><a href="https://jackjackspack.org/adopt">Adoption Form</a></strong> or view our pups on <strong><a href="https://www.petfinder.com/search/pets-for-adoption/?include_transportable=0&shelter_id%5B0%5D=TX2761&sort%5B0%5D=recently_added">PetFinder</a></strong></li>
+          </ul>
         </div>
       </div>
     </main>

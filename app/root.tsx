@@ -29,12 +29,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="Content-Security-Policy" content="
-          default-src 'self';
-          font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
-          /* other directives for scripts, styles, images, etc. */
-          "></meta>
-        <link rel="icon" href="./favicon.ico" />
         <Meta />
         <Links />
       </head>
