@@ -67,9 +67,6 @@ function Layout({
       }), /* @__PURE__ */ jsx("meta", {
         name: "viewport",
         content: "width=device-width, initial-scale=1"
-      }), /* @__PURE__ */ jsx("link", {
-        rel: "icon",
-        href: "./favicon.ico"
       }), /* @__PURE__ */ jsx(Meta, {}), /* @__PURE__ */ jsx(Links, {})]
     }), /* @__PURE__ */ jsxs("body", {
       children: [children, /* @__PURE__ */ jsx(ScrollRestoration, {}), /* @__PURE__ */ jsx(Scripts, {})]
@@ -199,7 +196,21 @@ function Welcome() {
         /* @__PURE__ */ jsx("h2", { className: "text-2xl text-gray-900 dark:text-gray-100 font-bold text-center", children: puppy.name }),
         /* @__PURE__ */ jsx("br", {}),
         /* @__PURE__ */ jsx("br", {})
-      ] }, puppy.name)) })
+      ] }, puppy.name)) }),
+      /* @__PURE__ */ jsx("div", { className: "text-center w-full", children: /* @__PURE__ */ jsx("hr", {}) }),
+      /* @__PURE__ */ jsx("h2", { className: "text-2xl text-gray-900 dark:text-gray-100 font-bold", children: "Next Steps:" }),
+      /* @__PURE__ */ jsxs("ul", { className: "text-center", children: [
+        /* @__PURE__ */ jsxs("li", { children: [
+          "Please check out our ",
+          /* @__PURE__ */ jsx("a", { href: "https://www.amazon.com/hz/wishlist/ls/2ZHVZ6WIR1XP4?ref_=wl_share", children: /* @__PURE__ */ jsx("strong", { children: "Amazon Wishlist" }) })
+        ] }),
+        /* @__PURE__ */ jsxs("li", { children: [
+          "Fill out an ",
+          /* @__PURE__ */ jsx("strong", { children: /* @__PURE__ */ jsx("a", { href: "https://jackjackspack.org/adopt", children: "Adoption Form" }) }),
+          " or view our pups on ",
+          /* @__PURE__ */ jsx("strong", { children: /* @__PURE__ */ jsx("a", { href: "https://www.petfinder.com/search/pets-for-adoption/?include_transportable=0&shelter_id%5B0%5D=TX2761&sort%5B0%5D=recently_added", children: "PetFinder" }) })
+        ] })
+      ] })
     ] })
   ] }) });
 }
@@ -262,7 +273,7 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: home,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-tKC4XhlV.js", "imports": ["/assets/chunk-UH6JLGW7-BnjEZNfp.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/assets/root-dYsOBgOX.js", "imports": ["/assets/chunk-UH6JLGW7-BnjEZNfp.js"], "css": ["/assets/root-BqEeaWG7.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/home-C3wdL6fJ.js", "imports": ["/assets/chunk-UH6JLGW7-BnjEZNfp.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-2df721df.js", "version": "2df721df", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/assets/entry.client-tKC4XhlV.js", "imports": ["/assets/chunk-UH6JLGW7-BnjEZNfp.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/assets/root-DP2NCo_T.js", "imports": ["/assets/chunk-UH6JLGW7-BnjEZNfp.js"], "css": ["/assets/root-B8t4WL5i.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/home-D6Btg3EV.js", "imports": ["/assets/chunk-UH6JLGW7-BnjEZNfp.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-af591060.js", "version": "af591060", "sri": void 0 };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "unstable_middleware": false, "unstable_optimizeDeps": false, "unstable_splitRouteModules": false, "unstable_subResourceIntegrity": false, "unstable_viteEnvironmentApi": false };
