@@ -16,7 +16,7 @@ import Violet from "./Violet4.jpeg";
 export function Welcome() {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
+      <div className="flex-1 flex flex-col items-center gap-12 min-h-0">
         <header className="flex flex-col items-center gap-9">
           <h1 className="text-5xl font-semibold text-gray-900 dark:text-gray-100">
             Puppies!
@@ -26,15 +26,15 @@ export function Welcome() {
           </p>
         </header>
         <div className="max-w-[80%] w-full space-y-6 px-4 flex flex-col items-center">
-          <span className="text-gray-500 dark:text-gray-400 text-center font-bold">
+          <h2 className="text-2xl text-gray-900 dark:text-slate-300 font-bold">
             First meet the mama:
-          </span>
+          </h2>
 
           <div className="columns-md gap-4">
             <div>
-              <h2 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">
+              <h3 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">
                 Willa
-              </h2>
+              </h3>
               <span>
                 Willa is a beautiful and sweet dog with a very mild temperament. She was found in the neighborhood and came to live with us on May 28th, 2025 as a foster after the rescue helped us catch her. The vet estimated her age around 2.5 years, and her DNA results are pictured.
               </span>
@@ -81,14 +81,14 @@ export function Welcome() {
           <div className="text-center w-full">
             <hr />
           </div>
-          <span className="text-gray-500 dark:text-gray-400 text-center font-bold">
+          <h2 className="text-2xl text-gray-900 dark:text-slate-300 font-bold">
             Now meet the puppies:
-          </span>
+          </h2>
           <br />
           <br />
-          <div className="columns-3xs gap-4">
+          <div className="columns-3xs">
             {puppies.map((puppy) => (
-              <div key={puppy.name} className="flow-root">
+              <div key={puppy.name} className="flow-root border-1 border-solid border-indigo-500 rounded-xl p-2 m-2">
                 <span className="justify-center items-center">
                   <img
                     src={puppy.pic}
@@ -107,12 +107,12 @@ export function Welcome() {
           <div className="text-center w-full">
             <hr />
           </div>
-          <h2 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">
+          <h2 className="text-2xl text-gray-900 dark:text-slate-300 font-bold">
             Next Steps:
           </h2>
           <ul className="text-center">
-            <li>Please check out our <a href="https://www.amazon.com/hz/wishlist/ls/2ZHVZ6WIR1XP4?ref_=wl_share"><strong>Amazon Wishlist</strong></a></li>
-            <li>Fill out an <strong><a href="https://jackjackspack.org/adopt">Adoption Form</a></strong> or view our pups on <strong><a href="https://www.petfinder.com/search/pets-for-adoption/?include_transportable=0&shelter_id%5B0%5D=TX2761&sort%5B0%5D=recently_added">PetFinder</a></strong></li>
+            <li>Please check out our <a href="https://www.amazon.com/hz/wishlist/ls/2ZHVZ6WIR1XP4?ref_=wl_share" className="text-sky-400"><strong>Amazon Wishlist</strong></a></li>
+            <li>Fill out an <strong><a href="https://jackjackspack.org/adopt" className="text-sky-400">Adoption Form</a></strong> or view our pups on <strong><a href="https://www.petfinder.com/search/pets-for-adoption/?include_transportable=0&shelter_id%5B0%5D=TX2761&sort%5B0%5D=recently_added" className="text-sky-400">PetFinder</a></strong></li>
           </ul>
         </div>
       </div>

@@ -1,7 +1,7 @@
 {
-  "homepage": "https://sarahwylie.github.io/pupporama",
-  "name": "puppies",
+  "name": "pupporama",
   "private": true,
+  "homepage": "https://sarahwylie.github.io/pupporama/",
   "type": "module",
   "scripts": {
     "build": "react-router build",
